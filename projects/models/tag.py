@@ -6,3 +6,9 @@ class Tag(models.Model):
 
     def __str__(self):
         return self.title
+
+    class Meta:
+        db_table = 'tags'
+        verbose_name = 'Tag'
+        verbose_name_plural = 'Tags'
+        ordering = ['title']
